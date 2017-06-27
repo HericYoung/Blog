@@ -1,7 +1,7 @@
 # H3ric Young 
 ###### ~~————就职于Stark Industries~~
-###### ————程序猿，偶尔摄影，偶尔吉他，偶尔咖啡
-![](http://os738issp.bkt.clouddn.com/starkindustry.jpg "Stark Industries")
+###### ————程序猿，偶尔篮球，偶尔吉他，偶尔咖啡，经常摄影
+![Stark Industries](http://os738issp.bkt.clouddn.com/starkindustry.jpg "Stark Industries")
 
 懒得写Html，我就写Markdown好了
 
