@@ -659,7 +659,7 @@ footer {
     
     .social {
         position: absolute;
-        top: 40px;
+        top: 0;
         @include column(2,12);
         right: 3vw;
         font-style: italic;
