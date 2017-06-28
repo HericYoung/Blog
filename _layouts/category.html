@@ -9,10 +9,9 @@
                 
                 {% for category in site.categories %}
                     <li>
-                        <h3>
-                        <a href="javascript:showArticle();">
+                        <h3 onclick="showArticle();">
                           <span>{{ category | first }}</span>
-                          <span style="float:right;font-size: large">共{{ category | last | size }}篇</span></a>
+                          <span style="float:right;font-size: large">共{{ category | last | size }}篇</span>
                         </h3>
                         <ul class="arc-list" style="display:none;">
                             {% for post in category.last %}
