@@ -11,7 +11,7 @@
                     <li>
                         <h3>
                           <span>{{ category | first }}</span>
-                          </span style="float:right">共{{ category | last | size }}篇</span>
+                          </span style="float:right;font-size: x-small;">共{{ category | last | size }}篇</span>
                         </h3>
                         <ul class="post-list">
                             {% for post in category.last %}
