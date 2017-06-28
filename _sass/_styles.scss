@@ -683,9 +683,9 @@ footer {
     
     .social {
         position: absolute;
-        top: 109px;
+        top: 80px;
         @include column(2,12);
-        right: 5vw;
+        right: 1vw;
         font-style: italic;
         a {
             &:hover {
