@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: category
 title: "Category"
 description: 
 tags: [Jekyll, theme, responsive, blog, template]
