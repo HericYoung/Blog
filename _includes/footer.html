@@ -11,31 +11,23 @@
         {% endfor %}
       </ol>
 
-      <div class="social" style="top:40px">
+      <div class="social" style="top:40px;width: 25%">
         <ul>
-            <li>常年瞎逛网站，不时有更新</li>
-            <li><a id="zhihu" href="{{ site.owner.zhihu }}"><span class="foot-link">知乎</span></a></li>
+            <span>常年瞎逛网站，不时有更新</span>
+            <li>
+              <a id="zhihu" href="{{ site.owner.zhihu }}"><span class="foot-link">知乎</span></a>
+              <a id="github" href="{{ site.owner.github }}" target="_blank"><span class="foot-link">Gayhub</span></a>
+            </li>
 
-            {% if site.owner.github %}
-            <li><a id="github" href="{{ site.owner.github }}" target="_blank"><span class="foot-link">Gayhub</span></a></li>
-            {% endif %}
+            <li>
+              <a id="500px_me" href="{{ site.owner.500px_me }}" target="_blank"><span class="foot-link">500px中国版</span></a>
+              <a id="50px_com" href="{{ site.owner.500px_com }}" target="_blank"><span class="foot-link">500px国际版</span></a>
+            </li>
 
-
-            {% if site.owner.500px_me %}
-            <li><a id="500px_me" href="{{ site.owner.500px_me }}" target="_blank"><span class="foot-link">500px中国版</span></a></li>
-            {% endif %}
-
-            {% if site.owner.500px_com %}
-            <li><a id="50px_com" href="{{ site.owner.500px_com }}" target="_blank"><span class="foot-link">500px国际版</span></a></li>
-            {% endif %}
-
-            {% if site.owner.tuchong %}
-            <li><a id="tuchong" href="{{ site.owner.tuchong }}" target="_blank"><span class="foot-link">图虫</span></a></li>
-            {% endif %}
-
-            {% if site.owner.lofter %}
-            <li><a id="lofter" href="{{ site.owner.lofter }}" target="_blank"><span class="foot-link">Lofter</span></a></li>
-            {% endif %}
+            <li>
+              <a id="tuchong" href="{{ site.owner.tuchong }}" target="_blank"><span class="foot-link">图虫</span></a>
+              <a id="lofter" href="{{ site.owner.lofter }}" target="_blank"><span class="foot-link">Lofter</span></a>
+            </li>
         </ul>
     </div>
     </aside>
