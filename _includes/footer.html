@@ -12,16 +12,29 @@
       </ol>
 
       <div class="social">
+        常年逛逛网站，时不时有更新
         <ul>
-            <li><a id="mail" href="mailto:{{ site.owner.email }}"><span class="foot-link">Contact Me</span></a></li>
+            <li><a id="zhihu" href="{{ site.owner.zhihu }}"><span class="foot-link">知乎</span></a></li>
 
-            {% if site.owner.twitter %}
-            <li><a id="twit" href="http://twitter.com/{{ site.owner.twitter }}" target="_blank"><span class="foot-link">@{{ site.owner.twitter }}</span></a></li>
+            {% if site.owner.github %}
+            <li><a id="github" href="{{ site.owner.gitHub }}" target="_blank"><span class="foot-link">Github</span></a></li>
             {% endif %}
 
 
-            {% if site.owner.dribbble %}
-            <li><a id="drib" href="http://dribbble.com/{{ site.owner.dribbble }}" target="_blank"><span class="foot-link">Dribbble</span></a></li>
+            {% if site.owner.500px_me %}
+            <li><a id="500px_me" href="{{ site.owner.500px_me }}" target="_blank"><span class="foot-link">500px中国版</span></a></li>
+            {% endif %}
+
+            {% if site.owner.500px_com %}
+            <li><a id="50px_com" href="{{ site.owner.500px_com }}" target="_blank"><span class="foot-link">500px国际版</span></a></li>
+            {% endif %}
+
+            {% if site.owner.tuchong %}
+            <li><a id="tuchong" href="{{ site.owner.tuchong }}" target="_blank"><span class="foot-link">图虫</span></a></li>
+            {% endif %}
+
+            {% if site.owner.lofter %}
+            <li><a id="lofter" href="{{ site.owner.lofetr }}" target="_blank"><span class="foot-link">Lofter</span></a></li>
             {% endif %}
         </ul>
     </div>
