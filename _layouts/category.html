@@ -9,7 +9,7 @@
                 
                 {% for category in site.categories %}
                     <li>
-                        <h3>{{ category | first }}</h3>
+                        <span>{{ category | first }}</span>
                         </span style="float:right">{{ category | last | size }}</span>
                         <ul class="post-list">
                             {% for post in category.last %}
