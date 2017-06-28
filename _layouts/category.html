@@ -6,21 +6,26 @@
                 <lh>
                   <h2 style="margin-bottom: 30px"><span class="bb">{{ page.title }}</span></h2>
                 </lh>
-                  {% for category in site.categories %}
+                
+                {% for category in site.categories %}
                     <li>
-                      <div class="deets" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                         <h2>{{ category | first }}</h2>
                         </span>{{ category | last | size }}</span>
                         <ul class="arc-list">
                             {% for post in category.last %}
-                                <li>{{ post.date | date:"%d/%m/%Y"}}
-                                  <a href="{{ post.url }}">{{ post.title }}</a>
+                                <li>
+                                  <div class="deets" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                                    <h3>
+                                        <a href="{{ post.url }}">{{ post.title }}</a>
+                                    </h3>
+                                    <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>
+                                  </div>
                                 </li>
                             {% endfor %}
                         </ul>
-                      <div>
                     </li>
-                  {% endfor %}
+                {% endfor %}
+
               </ol>
           </article>
         </section>
