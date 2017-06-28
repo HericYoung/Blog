@@ -9,7 +9,7 @@
                 
                 {% for category in site.categories %}
                     <li>
-                        <h3 onclick="javascript:showArticle(this);">
+                        <h3 onclick="showArticle(this);">
                           <span>{{ category | first }}</span>
                           <span style="float:right;font-size: large">共{{ category | last | size }}篇</span>
                         </h3>
