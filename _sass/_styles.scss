@@ -682,10 +682,10 @@ footer {
     }
     
     .social {
-        margin:30px 40px 0 0;
-        top: 80px;
+        position: absolute;
+        top: 109px;
         @include column(2,12);
-        right: 1vw;
+        right: 5vw;
         font-style: italic;
         a {
             &:hover {
