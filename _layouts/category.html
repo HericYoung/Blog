@@ -9,11 +9,11 @@
                 
                 {% for category in site.categories %}
                     <li>
-                        <h3>
+                        <h3 onclick="javascript:showArticle(this);">
                           <span>{{ category | first }}</span>
                           <span style="float:right;font-size: large">共{{ category | last | size }}篇</span>
                         </h3>
-                        <ul class="arc-list">
+                        <ul class="arc-list" style="display:none;">
                             {% for post in category.last %}
                                 <li>
                                   <div class="deets" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
