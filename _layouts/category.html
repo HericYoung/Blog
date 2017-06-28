@@ -9,8 +9,8 @@
                 
                 {% for category in site.categories %}
                     <li>
-                        <h2>{{ category | first }}</h2>
-                        </span>{{ category | last | size }}</span>
+                        <h3>{{ category | first }}</h3>
+                        </span style="float:right">{{ category | last | size }}</span>
                         <ul class="arc-list">
                             {% for post in category.last %}
                                 <li>
