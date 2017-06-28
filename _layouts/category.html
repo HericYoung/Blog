@@ -8,7 +8,7 @@
                 </lh>
                 
                 {% for category in site.categories %}
-                    <li>
+                    <li id="test">
                         <h3 onclick="showArticle();">
                           <span>{{ category | first }}</span>
                           <span style="float:right;font-size: large">共{{ category | last | size }}篇</span>
@@ -34,8 +34,8 @@
         <script type="text/javascript">
     function showArticle(){
         //obj.parentNode.getElementsByTagName("ul").style.display="block";
-        $(this).parent().parent().find("ul").css("display","block");
-        
+        //$(this).parent().parent().find("ul").css("display","block");  
+        alert($(this).parent().parent().attr("id"));
     }
 </script>
     </div>
