@@ -766,6 +766,7 @@ footer {
     
     .prev-posts {
         @include column(9);
+        width:80%;
         padding-left: 0;
         float: none;
         margin: 0 auto;
