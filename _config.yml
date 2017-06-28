@@ -66,11 +66,11 @@ sass:
     style: :compressed
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title
+#permalink:   /:categories/:title
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp"]
 
 #分页
-paginate: 5
+paginate: 3
 paginate_path: "page:num"
