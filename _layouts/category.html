@@ -9,7 +9,7 @@
                 
                 {% for category in site.categories %}
                     <li>
-                        <h3 onclick="showArticle(this);">
+                        <h3 onclick="showArticle();">
                           <span>{{ category | first }}</span>
                           <span style="float:right;font-size: large">共{{ category | last | size }}篇</span>
                         </h3>
@@ -34,8 +34,9 @@
     </div>
 
 <script type="text/javascript">
-    function showArticle(obj){
-        obj.parentNode.getElementsByTagName("ul").style.display="block";
+    function showArticle(){
+        //obj.parentNode.getElementsByTagName("ul").style.display="block";
+        $(this).parent.find("ul").css("display","block");
     }
 </script>
 
