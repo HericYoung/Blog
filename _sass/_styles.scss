@@ -753,14 +753,16 @@ footer {
 @media only screen and (max-width: 500px) {
     footer {
     
-    
+    .social {
+        display: none;
+    }
     
     aside {
         width: 90%;
         margin: 0 auto;
     }
     
-    .social {
+    .prev-posts {
         @include column(9);
         padding-left: 0;
         float: none;
@@ -769,10 +771,6 @@ footer {
         li {
             margin-top: $lh/2;
         }
-    }
-
-    .prev-posts {
-        display: none;
     }
     
     }
