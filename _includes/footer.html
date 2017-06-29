@@ -21,7 +21,7 @@
         </ul>
     </div>
       <ul class="social" style="width:40%">
-        <p class="list-title">Recent Posts</p>
+        <p class="list-title">最近更新<!-- Recent Posts --></p>
         {% for post in site.posts | limit:3 %} <!-- for1 -->
             <li>
               <span class="recent-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title | strip_html | strip_newlines | truncate: 30 }} </a></span>
