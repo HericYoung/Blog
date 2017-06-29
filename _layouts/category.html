@@ -34,7 +34,7 @@
         <script type="text/javascript">
           $(document).ready(function(){
               $(".categoryName").on('click',function(){
-                  alert( $(this).parent().find("ul").html() );
+                $(this).parent().find("ul").css("display","block");
               });
           }); 
         </script>
