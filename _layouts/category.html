@@ -34,7 +34,11 @@
         <script type="text/javascript">
           $(document).ready(function(){
               $(".categoryName").on('click',function(){
-                $(this).parent().find("ul").css("display","block");
+                var content = $(this).parent().find("ul");
+                if(content.css("display") == "none")
+                  content.css("display","block");
+                else
+                  content.css("display","none")
               });
           }); 
         </script>
