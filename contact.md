@@ -6,3 +6,4 @@ tags: [Jekyll, theme, responsive, blog, template]
 image:
   <!-- feature: typewriter.jpg -->
 ---
+![Wechat]({{ site.url }}/images/WechatQR.jpg)
