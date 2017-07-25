@@ -2,7 +2,7 @@
 layout: contact
 title: "Contact"
 description: 
-tags: [Jekyll, theme, responsive, blog, template]
+tags: []
 image:
   <!-- feature: typewriter.jpg -->
 ---
