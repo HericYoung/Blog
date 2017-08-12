@@ -35,14 +35,16 @@
           $(document).ready(function(){
               $(".categoryName").on('click',function(){
                 var content = $(this).parent().find("ul");
-                if(content.css("display") == "none")
-                  content.css("display","block");
-                else
-                  content.css("display","none")
+                content.slideToggle(1000);
+                // if(content.css("display") == "none")
+                //   content.css("display","block");
+                // else
+                //   content.css("display","none")
               });
           }); 
         </script>
     </div>
 
-{% include footer.html %}
 
+
+{% include footer.html %}
