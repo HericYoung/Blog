@@ -47,7 +47,7 @@
     <h3>等到放晴那天</h3>
 	<h5 style="margin-top: 10%"></h5>
   </div>
-	<audio style="position: absolute;bottom: 0;right:0;" src="qingtian.mp3" controls="controls" type="audio/mpeg" autoplay="autoplay">
+	<audio style="position: absolute;bottom: 0;right:0;" src="qingtian.mp3" controls="controls" type="audio/mpeg">
 	Your browser does not support the audio tag.
 	</audio>
 </body>
@@ -59,6 +59,12 @@
 		if(!isSupp){
 			$('h5').html("本来有歌听的，可惜你这浏览器不支持啊[0_0]");
 		}
+		window.setTimeout(function(){
+
+			//do something...
+			$('audio')[0].play();
+		},3000);
+		
 	});
 	
 </script>
