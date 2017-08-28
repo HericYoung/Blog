@@ -44,7 +44,21 @@
 <link rel="shortcut icon" href="{{ site.url }}/lemontea.ico">
 <body>
   <div style="margin:0 auto;text-align: center;padding:20% 0;">
-    <h1>有缘再见[0_0]</h1>
+    <h3>等到放晴那天</h3>
+	<h5 style="margin-top: 10%"></h5>
   </div>
+	<audio style="position: absolute;bottom: 0;right:0;" src="qingtian.mp3" controls="controls" type="audio/mpeg" autoplay="autoplay">
+	Your browser does not support the audio tag.
+	</audio>
 </body>
 </html>
+<script type="text/javascript">
+	$(function(){
+		var myAud=document.createElement('audio');
+		var isSupp=myAud.canPlayType("audio/mpeg");
+		if(!isSupp){
+			$('h5').html("本来有歌听的，可惜你这浏览器不支持啊[0_0]");
+		}
+	});
+	
+</script>
